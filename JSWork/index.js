@@ -7,9 +7,34 @@
 //     console.log("a inside:"+a);
 // }
 // console.log("a outside:"+b);
-function fun(a,b){
-    console.log("hiiii");
-    return a+b;
+// console.log("hi,inside index.js")
+// function fun(a,b){
+//     console.log("hiiii");
+//     return a+b;
+// }
+// const result=fun(23,12);
+// console.log(result);
+
+const button=document.getElementById("btn");
+console.log(button)
+function selectLanguage(language)
+{
+    console.log("hi,inside selectLanguage");
+    let data;
+    if(language=='c'){
+        function cCompiler()
+        {
+        return " C Compiler";
+        }
+    data=cCompiler();
+    }
+    if(language=="java"){
+        function javaCompiler()
+        {
+        return "java Compiler";
+        }
+    data=javaCompiler();
+    }
+    return data;
 }
-const result=fun();
-console.log(result);
+// console.log(selectLanguage("c"))
